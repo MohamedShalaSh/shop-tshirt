@@ -9,7 +9,7 @@ body{
 }
 /* STYLE BOXES */
 .box{
-    margin:1cm 1cm 1cm 2cm;
+    margin:1cm;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
