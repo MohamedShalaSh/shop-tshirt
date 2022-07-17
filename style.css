@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+    font-family: sans-serif;
+}
+/* STYLE BOXES */
+.box{
+    margin:1cm 1cm 1cm 2cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box section{
+    width: 5cm;
+    height: 7cm;
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin: .5cm .5cm;
+}
+.box section img{
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.509);
+}
+.box section .toBuy{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 5px;
+}
+.box section .toBuy button{
+    width: 2cm;
+    height: .7cm;
+    border: none;
+    border-radius:1cm;
+    background-color: #8a2be2;
+    color: #fff;
+}
+.box section .toBuy button:hover{
+    cursor: pointer;
+    background-color: #672ba0;
+}
+/* Style BTN HEAD */
+.pageBuy{
+    text-align: right;
+    height: 2cm;
+}
+.pageBuy #btnhead{
+    margin: 20px;
+    padding: 3px 10px;
+    height: .7cm;
+    border: none;
+    border-radius:1cm;
+    background-color: #8a2be2;
+    color: #fff;
+    z-index: 20;
+    position: relative;
+}
+.pageBuy #btnhead:hover{
+    cursor: pointer;
+    background-color: #672ba0;
+}
+/* SECOND PAGE   */
+.secondPage,
+.secondPage-show{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    z-index: 10;
+    display: none;
+    padding-top: 1.5cm;
+}
+.secondPage-show{
+    display: block;
+}
+.secondPage section{
+    background-color: #000;
+    margin:.5cm 1cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 1.5cm;
+    display:none ;
+}
+.secondPage #total{
+    background-color: #222;
+    justify-content: center;
+    gap: 30px;
+}
+.secondPage #total button{
+    padding: 3px 10px;
+    height: .7cm;
+    border: none;
+    border-radius:1cm;
+    background-color: #8a2be2;
+    color: #fff;
+    cursor: pointer;
+}
+.secondPage section img{
+    width: 40px;
+}
+.secondPage section div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.secondPage section input{
+    width: 1cm;
+    outline: none;
+}
+
+.close{
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    margin-right: -10px;
+    cursor: pointer;
+}
+
+
+/* DISABLED IN ANY BUTTON */
+:disabled{
+    opacity: .3;
+    cursor: none;
+}
+/* MSG WHEN ADD ITEM */
+.msg{
+    position: fixed;
+    width: 100%;
+    margin: 1cm auto;
+}
+.msg p{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    /* animation: msg 1.5s 1 forwards; */
+    opacity: 0;
+}
+.msg p span{
+    background-color: #672ba0;
+    border-radius: 5px;
+    padding: 7px;
+    color: #fff;
+}
+@keyframes msg{
+    0%,100%{
+        opacity: 0; ;
+    }
+    75%{
+        opacity: 1;;
+    }
+}
+/*  */
+.null{
+    text-align: center;
+    color: #fff;
+    margin-top: 3cm;
+}

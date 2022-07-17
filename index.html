@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.js"></script>
+</head>
+<body>
+  <div class="msg">
+    <p id="msg" class="pMsg" ><span>Successfully added</span> </p>
+    <p id="msg2" class="pMsg" ><span>Successfully added</span></p>
+    <p id="msg3" class="pMsg" ><span>Successfully added</span></p>
+  </div>
+  <!-- page Buy -->
+  <div id="secondPage" class="secondPage">
+    <p class="null" id="null">NO Item Added</p>
+    <section id="section1">
+      <p id="title">White Tshirt</p>
+      <div>
+        <input id="in1" type="number" value="0" min="0" max="10">
+        <p id="priceINSecondPage1">10 &</p>
+      </div>
+      <img src="image/tshirtWhite.jfif" alt="">
+      <div class="close" id="close1"><i class="fa-solid fa-x"></i></div>
+    </section>
+
+    <section id="section2">
+      <p id="title">Yellow Tshirt</p>
+      <div>
+        <input id="in2" type="number" value="0"  min="0" max="10">
+        <p id="priceINSecondPage2"></p>
+      </div>
+      <img src="image/tshirtYellow.jpg" alt="">
+      <div class="close" id="close2"><i class="fa-solid fa-x"></i></div>
+    </section>
+    
+    <section id="section3">
+      <p id="title">Black Tshirt</p>
+      <div>
+        <input id="in3" type="number" value="0"  min="0" max="10">
+        <p id="priceINSecondPage3"></p>
+      </div>
+      <img src="image/tshirtBlack.jfif" alt="">
+      <div class="close" id="close3"><i class="fa-solid fa-x"></i></div>
+    </section>
+    <!-- total -->
+    <section id="total">
+      <button id="cart">Add to Cart</button>
+      <p id="totalPrice"></p>
+    </section>
+  </div>
+  <!--  -->
+  <div class="pageBuy" id="pageBuy">
+    <button id="btnhead">Card Cart</button>
+  </div>
+  <!-- ------------------------------ -->
+  <div class="box">
+    <section class="s1">
+      <img src="image/tshirtWhite.jfif" alt="">
+      <div class="toBuy">
+        <button id="btnS1">Buy</button>
+        <p id="price1"></p>
+      </div>
+    </section>
+    <!--  -->
+    <section class="s1">
+      <img src="image/tshirtYellow.jpg" alt="">
+      <div class="toBuy">
+        <button id="btnS2">Buy</button>
+        <p id="price2"></p>
+      </div>
+    </section>
+    <!--  -->
+    <section class="s1">
+      <img src="image/tshirtBlack.jfif" alt="">
+      <div class="toBuy">
+        <button id="btnS3">Buy</button>
+        <p id="price3"></p>
+      </div>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
