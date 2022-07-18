@@ -94,7 +94,7 @@ const THEfun2=()=>{
     priceINSecondPage3.innerHTML=`${in3.value*num3} $`
     //total
     let totalPrice=document.getElementById('totalPrice');
-    totalPrice.innerHTML= `${(in1.value*num1)+(in2.value*num2)+(in3.value*num3)} $`
+    totalPrice.innerHTML= `Total | ${(in1.value*num1)+(in2.value*num2)+(in3.value*num3)} $`
 }
 
 
